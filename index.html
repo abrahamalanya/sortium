@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sortium</title>
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="./img/logo.png" alt="logoSortium">
+  </header>
+  <main>
+    <section>
+      <article id="file">
+        <input type="file" id="txtFile" class="btn" accept=".txt" />
+        <button class="btn" onclick="handleFile()">Subir</button>
+      </article>
+      <article id="participants" class="card">
+        <div class="header">
+          <div class="title">
+            <p>0</p>
+            <h3>jugadores</h3>
+          </div>
+        </div>
+      </article>
+    </section>
+    <aside>
+      <div id="trophy" class="card">
+        <p>50</p>
+        <span>soles</span>
+      </div>
+      <div id="winner" class="card">
+        <p id="winnerPlayer" data-text="El ganador es..."></p>
+      </div>
+      <button id="buttonSelectWinner" class="btn" disabled>Sortear</button>
+    </aside>
+  </main>
+</body>
+</html>
