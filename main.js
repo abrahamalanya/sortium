@@ -14,7 +14,7 @@ function handleFile() {
     let html = `<div class="header">
         <div class="title">
           <p>${lines.length}</p>
-          <h3>jugadores</h3>
+          <h5>jugadores</h5>
         </div>
       </div>
       <div class="container">`;
@@ -25,9 +25,14 @@ function handleFile() {
       // Validar que la línea no esté vacía antes de agregarla al array
       if (participant !== '') {
         participants.push(participant);
-        html += `<div class="player">
-              <img src="https://cdn-icons-png.flaticon.com/512/1395/1395030.png" alt="player">
-              <p>${participant}</p>
+        html += `<div class="profile">
+              <div class="player">
+                <img src="https://cdn-icons-png.flaticon.com/512/1395/1395030.png" alt="player">
+                <p>${participant}</p>
+              </div>
+              <div class="money">
+                <p>💰 1.00</p>
+              </div>
             </div>`;
       }
     });
