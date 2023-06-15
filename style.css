@@ -69,20 +69,20 @@ body {
 
 /* === header === */
 header {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
   position: fixed;
   z-index: 100;
-  top: 1rem;
-  left: 1rem;
+  padding: 1rem;
 }
 
 header > img {
   border-radius: var(--border-radius);
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 40px;
+  height: 40px;
 }
 
 header > h1 {
@@ -91,14 +91,13 @@ header > h1 {
 
 /* === main === */
 main {
-  width: 100vw;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr) auto;
+  grid-template-rows: 100vh;
 }
 
 section {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,8 +169,8 @@ section > #participants {
 }
 
 .player > img {
-  max-width: 3vw;
-  min-height: 3vw;
+  max-width: 40px;
+  min-height: 40px;
   border-radius: 50%;
   background-color: var(--color-blue);
   padding: .3rem;
@@ -213,7 +212,7 @@ aside > .card {
 }
 
 #trophy {
-  height: 40%;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,4 +264,35 @@ aside > .card {
 
 #winner > p::after {
   content: attr(data-text);
+}
+
+
+/* responsive */
+@media (max-width: 900px) {
+  .btn {
+    font-size: 12px;
+  }
+
+  header {
+    background-color: var(--color-black);
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  #file {
+    width: 90%;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+  section > #participants {
+    width: 90%;
+    height: 50%;
+  }
+
+  aside {
+    width: 100vw;
+  }
 }
