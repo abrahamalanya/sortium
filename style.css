@@ -8,6 +8,7 @@
   --color-white: #f6f1f1;
   --color-yellow: #FFD93D;
   --color-orange: #FF8400;
+  --color-skyblue: #1293c6;
   --color-blue: #2e86eb;
   --color-gray: #323843;
 }
@@ -27,10 +28,10 @@
   cursor: pointer;
   border-radius: var(--border-radius);
   border: transparent;
-  background: linear-gradient(to bottom right, var(--color-yellow), var(--color-orange));
+  background: linear-gradient(to bottom right, var(--color-skyblue), var(--color-blue));
   color: var(--color-white);
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   padding: .5rem 1rem;
 }
@@ -51,6 +52,7 @@ h4 {
   font-size: 1.6rem;
 }
 
+p,
 h5 {
   font-size: 1.2rem;
 }
@@ -65,7 +67,7 @@ body {
   font-family: var(--font-family);
 }
 
-/* header */
+/* === header === */
 header {
   display: flex;
   flex-direction: row;
@@ -87,7 +89,7 @@ header > h1 {
   text-transform: capitalize;
 }
 
-/* main */
+/* === main === */
 main {
   width: 100vw;
   height: 100vh;
@@ -96,6 +98,7 @@ main {
 }
 
 section {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +108,7 @@ section {
 
 /* participants */
 section > #participants {
-  width: 80%;
+  width: 40%;
   height: 40%;
   display: flex;
   justify-content: flex-start;
@@ -131,18 +134,15 @@ section > #participants {
   flex-direction: row;
   align-items: center;
   gap: .6rem;
-  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 900;
 }
 
 .title > p {
   color: var(--color-blue);
-  font-size: 1.4rem;
 }
 
-.title > h3 {
-  color: var(--color-white);
+.title > h5 {
   letter-spacing: .4px;
 }
 
@@ -155,7 +155,14 @@ section > #participants {
   padding: 1rem 0;
 }
 
-.container > .player {
+.container > .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -163,18 +170,22 @@ section > #participants {
 }
 
 .player > img {
-  max-width: 5.5vw;
-  min-height: 5.5vw;
+  max-width: 3vw;
+  min-height: 3vw;
   border-radius: 50%;
   background-color: var(--color-blue);
-  padding: .5rem;
+  padding: .3rem;
 }
 
-.player p {
+.player > p {
   text-transform: capitalize;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 400;
   color: var(--color-white);
+}
+
+.profile > .money {
+  color: var(--color-yellow);
+  font-weight: 700;
 }
 
 /* === aside === */
@@ -202,43 +213,56 @@ aside > .card {
 }
 
 #trophy {
-  background-image: url(https://cdn-icons-png.flaticon.com/512/6639/6639827.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: rgba(169, 169, 169, 0.74);
-  background-blend-mode: exclusion;
   height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: var(--color-white);
+  font-weight: 900;
+}
+
+#trophy > h5 {
   color: var(--color-blue);
-  text-shadow: 2px 2px 10px var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
   font-weight: 900;
 }
 
 #trophy > p {
   display: flex;
   flex-direction: column;
-  font-size: 10rem;
+  font-size: 7rem;
 }
 
 #trophy > span {
-  font-size: 2rem;
-  text-transform: lowercase;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-#winner > p{
-  text-align: center;
-  font-size: 2rem;
+#winner {
   text-transform: uppercase;
+}
+
+#winner > .label {
+  width: max-content;
+  font-size: .8rem;
+  color: var(--color-black);
+  font-weight: 600;
+  background-color: var(--color-yellow);
+  padding: .2rem .8rem;
+  border-radius: 1rem;
+}
+
+#winner > .text {
+  margin-top: .5rem;
   font-weight: 900;
-  color: var(--color-white);
+  text-align: center;
   letter-spacing: 1.5px;
+  font-size: 1.5rem;
 }
 
 #winner > p::after {
   content: attr(data-text);
-  text-shadow: 2px 2px 10px #000;
 }
