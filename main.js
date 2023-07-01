@@ -56,9 +56,21 @@ buttonSelectWinner.addEventListener('click',function () {
   const randomIndex = Math.floor(Math.random() * participants.length);
   const randomParticipant = participants[randomIndex];
 
-  winnerPlayer.dataset.text = randomParticipant;
   buttonSelectWinner.disabled = true;
 
-  // Llamando a la funcion confeti
-  confeti();
+  
+  setTimeout(() => {
+    winnerPlayer.dataset.text = "3";
+  }, 1000);
+  setTimeout(() => {
+    winnerPlayer.dataset.text = "2";
+  }, 2000);
+  setTimeout(() => {
+    winnerPlayer.dataset.text = "1";
+  }, 3000);
+  setTimeout(() => {
+    winnerPlayer.dataset.text = randomParticipant;
+    // Llamando a la funcion confeti
+    confeti();
+  }, 4000);
 });
