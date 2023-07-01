@@ -27,11 +27,11 @@ function handleFile() {
         participants.push(participant);
         html += `<div class="profile">
               <div class="player">
-                <img src="https://cdn-icons-png.flaticon.com/512/1395/1395030.png" alt="player">
-                <p>${participant}</p>
+                <!-- <img src="./img/logo.png" alt="player"> -->
+                <p>💰 ${participant}</p>
               </div>
               <div class="money">
-                <p>💰 1.00</p>
+                <p></p>
               </div>
             </div>`;
       }
@@ -40,7 +40,7 @@ function handleFile() {
     html += `</div>`;
     participants = participants;
     container.innerHTML = html;
-    buttonSelectWinner.removeAttribute("disabled")
+    buttonSelectWinner.removeAttribute("disabled");
   };
   reader.readAsText(file);
 }
@@ -58,4 +58,7 @@ buttonSelectWinner.addEventListener('click',function () {
 
   winnerPlayer.dataset.text = randomParticipant;
   buttonSelectWinner.disabled = true;
+
+  // Llamando a la funcion confeti
+  confeti();
 });

@@ -62,8 +62,8 @@ h6 {
 }
 
 body {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-black);
   font-family: var(--font-family);
 }
 
@@ -172,7 +172,7 @@ section > #participants {
   max-width: 40px;
   min-height: 40px;
   border-radius: 50%;
-  background-color: var(--color-blue);
+  background-color: var(--color-white);
   padding: .3rem;
 }
 
@@ -242,6 +242,7 @@ aside > .card {
 
 #winner {
   text-transform: uppercase;
+  color: var(--color-white);
 }
 
 #winner > .label {
@@ -274,7 +275,7 @@ aside > .card {
   }
 
   header {
-    background-color: var(--color-black);
+    background-color: var(--color-white);
   }
 
   main {
