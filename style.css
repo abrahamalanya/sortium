@@ -36,6 +36,75 @@ main .main__header .title {
   font-size: 6rem;
 }
 
+/* footer */
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 8rem 10rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer a,
+.footer a:active {
+  color: var(--color-white);
+}
+
+.footer section:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 200px;
+}
+
+.footer--logo {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.footer--slogan {
+  font-size: 2rem;
+}
+
+.footer--subtitle {
+  color: var(--color-sortium);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer--subtitle ~ ul li {
+  padding-bottom: 1rem;
+}
+
+.footer section:nth-child(2) {
+  background-color: #171717;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer section:nth-child(2) > p {
+  color: var(--color-sortium);
+  text-transform: lowercase;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.footer section:nth-child(2) > div p {
+  display: flex;
+  align-items: center;
+}
+
+.footer section:nth-child(2) > div img {
+  width: 30px;
+  margin-left: 1rem;
+}
+
 @media (max-width: 640px) {
   .nav--desktop {
     display: none;
@@ -48,5 +117,19 @@ main .main__header .title {
 
   main .main__header div:nth-child(2) {
     display: none;
+  }
+
+  /* footer--mobile*/
+  .footer {
+    padding: 1rem 3rem;
+  }
+  .footer section:nth-child(1) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+  }
+
+  .footer section:nth-child(2) {
+    margin-top: 3rem;
   }
 }
