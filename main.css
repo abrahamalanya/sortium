@@ -36,6 +36,12 @@ a:visited {
 }
 
 /* button */
+button {
+  border: transparent;
+  padding: 1em 1rem;
+  border-radius: 1rem;
+}
+
 .btn--primary {
   background-color: var(--color-sortium);
   color: var(--color-white);
