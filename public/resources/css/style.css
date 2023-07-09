@@ -111,6 +111,8 @@
   justify-items: center;
   align-items: center;
   gap: 2rem;
+  width: 80%;
+  margin: auto;
 }
 
 .main__about-us article {
@@ -184,42 +186,57 @@
   width: fit-content;
 }
 
-/* main__header */
-.main__header {
-  width: 100vw;
-  height: 90vh;
+/* main__contact */
+.main__contact {
+  display: grid;
+  place-content: center;
+  padding: 15rem 0 10rem;
+  width: 80%;
+  margin: auto;
+}
+
+.main__contact article:nth-child(1) {
+  background-color: #121212;
+  border-radius: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  grid-template-rows: 300px;
+  justify-items: center;
+  padding: 3rem 5rem;
 }
 
-.main__header div:nth-child(1) {
-  width: 60%;
-}
-
-.main__header .title {
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-size: 6rem;
-}
-
-/* main__about */
-.main__about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
-}
-
-.main__about article:nth-child(1) {
+.main__contact article:nth-child(1) div:nth-child(1) {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.main__about article:nth-child(1) p {
-  text-align: center;
-  width: 50%;
+.main__contact article:nth-child(1) .container--text p:nth-child(1) {
+  font-size: var(--text-lg);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.main__contact article:nth-child(1) .container--text p:nth-child(2) {
+  font-size: var(--text-md);
+  font-weight: 300;
+  width: 70%;
+}
+
+.main__contact article:nth-child(1) div:nth-child(2) {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.main__contact article:nth-child(1) div:nth-child(2) img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3rem;
+  object-fit: cover;
 }
 
 /* footer */
@@ -311,14 +328,6 @@
   main .main__header div:nth-child(2) {
     display: none;
   }
-  /* main__about */
-  .main__about {
-    grid-template-columns: 1fr;
-  }
-
-  .main__about article:nth-last-child(1) {
-    display: none;
-  }
 
   /* footer--mobile*/
   .footer {
@@ -338,8 +347,21 @@
   .main__about-us {
     grid-template-columns: 1fr;
   }
-  
+
   .main__about-us article:nth-child(1) {
+    display: none;
+  }
+
+  /* main__contact */
+  .main__contact article:nth-child(1) {
+    grid-template-columns: 1fr;
+  }
+
+  .main__contact article:nth-child(1) .container--text p:nth-child(2) {
+    width: 100%;
+  }
+
+  .main__contact article:nth-child(1) div:nth-child(2) {
     display: none;
   }
 }
