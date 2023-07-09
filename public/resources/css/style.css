@@ -62,8 +62,46 @@
 
 .main__advertisement > div {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+  bottom: 10%;
+  left: 47%;
+}
+
+/* main__statistics */
+.main__statistics {
+  height: 60vh;
+  display: grid;
+  place-content: center;
+}
+
+.main__statistics article p:nth-child(1) {
+  font-size: var(--text-lg);
+  font-weight: 900;
+  text-align: center;
+}
+
+.main__statistics article p:nth-child(2) {
+  font-size: var(--text-md);
+  font-weight: 300;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.main__statistics article > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.main__statistics .card {
+  width: 100%;
+  height: 150px;
+  border-radius: 1rem;
+  padding: 2rem 0;
 }
 
 /* main__header */
