@@ -53,3 +53,22 @@ button {
   background-color: var(--color-white);
   color: var(--color-sortium);
 }
+
+/* main */
+.main__title--lg,
+.main__title--md,
+.main__title--sm {
+  font-weight: bold;
+}
+
+.main__title--lg {
+  font-size: 6rem;
+}
+
+.main__title--md {
+  font-size: 4rem;
+}
+
+.main__title--sm {
+  font-size: 2rem;
+}
