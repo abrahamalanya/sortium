@@ -1,10 +1,11 @@
 /* header */
 .header {
   width: 100%;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5em 5em;
+  padding: 0 5em;
   border-bottom: 1px solid #838383;
 }
 
@@ -30,6 +31,41 @@
 }
 
 /* main */
+/* main__advertisement */
+.main__advertisement {
+  height: calc(100vh - 15vh);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main__advertisement article {
+  height: inherit;
+  display: grid;
+  place-content: center;
+}
+
+.main__advertisement article div {
+  width: 800px;
+  text-align: center;
+}
+
+.main__advertisement article div p:nth-child(1),
+.main__advertisement article div p:nth-child(2) {
+  font-size: var(--text-xxl);
+  font-weight: 900;
+}
+
+.main__advertisement article div p:nth-child(3) {
+  font-size: var(--text-md);
+  margin: 3rem 0;
+}
+
+.main__advertisement > div {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}
+
 /* main__header */
 .main__header {
   width: 100vw;

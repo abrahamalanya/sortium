@@ -9,6 +9,7 @@
   --text-md: 2rem;
   --text-lg: 3rem;
   --text-xl: 4rem;
+  --text-xxl: 6rem;
 }
 
 * {
@@ -53,7 +54,8 @@ button,
 }
 
 .btn:hover {
-  background-color: var(--color-black);
+  background-color: inherit;
+  color: inherit;
 }
 
 .btn--primary {
