@@ -1,20 +1,32 @@
+/* header */
 .header {
-  background-color: var(--color-gray);
   width: 100%;
-  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1em;
+  padding: 1.5em 5em;
+  border-bottom: 1px solid #838383;
+}
+
+.header .logo h1 {
+  font-size: var(--text-md);
+  font-weight: 500;
 }
 
 .menu ul {
   display: flex;
-  gap: 1em;
+  gap: 3.2em;
 }
 
 .menu a {
-  color: var(--color-black);
+  font-size: var(--text-sm);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.header .icons button {
+  font-weight: 600;
+  border-radius: 3rem;
 }
 
 /* main */
@@ -127,8 +139,13 @@
 }
 
 @media (max-width: 640px) {
+  /* header--mobile */
   .nav--desktop {
     display: none;
+  }
+
+  .header {
+    padding: 1.5em 2em;
   }
 
   /* main--mobile */

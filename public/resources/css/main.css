@@ -5,6 +5,10 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-gray: #f5f5f5;
+  --text-sm: 1.5rem;
+  --text-md: 2rem;
+  --text-lg: 3rem;
+  --text-xl: 4rem;
 }
 
 * {
@@ -20,6 +24,8 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 ul {
@@ -28,31 +34,39 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--color-black);
+  color: inherit;
 }
 
 a:visited {
-  color: var(--color-black);
+  color: inherit;
 }
 
 /* button */
-button {
+button,
+.btn {
+  background-color: #dadada;
   border: transparent;
-  padding: 1em 1rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-black);
 }
 
 .btn--primary {
   background-color: var(--color-sortium);
   color: var(--color-white);
-  font-weight: bold;
-  cursor: pointer;
+  font-size: var(--text-sm);
 }
 
 .btn--primary:hover {
   background-color: var(--color-white);
   color: var(--color-sortium);
 }
+
 
 /* main */
 .main__title--lg,
