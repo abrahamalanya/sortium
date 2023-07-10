@@ -3,61 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sortium</title>
+  <meta name="description" content="Sortium, creamos oportunidades financieras mediante los juegos de azar, así los participantes logren alcanzar sus objetivos">
+  <meta name="author" content="Abraham Alanya">
+  <title>SORTIUM</title>
+  <link rel="shortcut icon" href="./public/resources/img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="./public/resources/css/main.css">
   <link rel="stylesheet" href="./public/resources/css/style.css">
   <script src="./public/resources/js/main.js" defer></script>
 </head>
-<body>
+<body class="dark-theme">
   <header class="header">
     <div class="logo">
       <a href="/">
-        <h1>sortium</h1>
+        <h1>SORTIUM</h1>
       </a>
     </div>
     <nav class="nav--desktop menu">
       <ul>
         <li>
-          <a href="/">Inicio</a>
+          <a href="#about-us">Empresa</a>
         </li>
         <li>
-          <a href="/">Empresa</a>
+          <a href="#winner">Ganadores</a>
         </li>
         <li>
-          <a href="/">Ganadores</a>
-        </li>
-        <li>
-          <a href="/">Contacto</a>
+          <a href="#contact">Contacto</a>
         </li>
       </ul>
     </nav>
     <div class="icons">
-      <button class="btn">🌚</button>
-      <!-- <button class="btn">🌝</button> -->
-      <button class="btn btn--primary">Conversar</button>
+      <button id="theme-toggle">🌓</button>
+      <a href="https://www.facebook.com/sortiumoficial" target="_blank">
+        <button class="btn btn--primary">Conversar</button>
+      </a>
     </div>
   </header>
   <main>
     <section class="main__advertisement">
-      <article id="advertisement-1" style="display: none;">
+      <article id="advertisement-1">
         <div>
           <p>Sorteos de 50.00 soles</p>
           <p>cada 2 semanas</p>
-          <p>Quieres ganar 50 soles para salcar tu semana, entonces no dudes en participar con solo 1 sol, no tengas miedo en participar porque la suerte favorece a los que se arriesgan</p>
-          <button class="btn--primary">Participar</button>
+          <p>Quieres ganar 50 soles para salvar tu semana, entonces no dudes en participar con solo 1 sol, no tengas miedo en participar porque la suerte favorece a los que se arriesgan</p>
+          <a href="https://www.facebook.com/sortiumoficial" target="_blank">
+            <button class="btn--primary">Participar</button>
+          </a>
         </div>
       </article>
-      <article id="advertisement-2" >
+      <article id="advertisement-2" style="display: none;">
         <div>
           <p>Próximamente se lanzará</p>
           <p>Lukea tu pensión</p>
           <p>Un sorteo para todos los estudiantes de carreras superiores, con la finalidad de pagar sus pensiónes solo participanto de los sorteos que iremos organizando</p>
-          <button class="btn--primary">Ver proyecto</button>
+          <!-- <button class="btn--primary">Ver proyecto</button> -->
         </div>
       </article>
       <div>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
+        <button onclick="ad('1')">1</button>
+        <button onclick="ad('2')">2</button>
       </div>
     </section>
 
@@ -67,24 +70,29 @@
         <P>te compartimos nuestros números estadísticos para que tengas mas confianza</P>
         <div>
           <div class="card">
-            <p>+15</p>
+            <img src="https://img.icons8.com/?size=512&id=DAoPjn2XoTUN&format=png" alt="Sortium">
+            <p>+19</p>
             <p>seguidores</p>
           </div>
           <div class="card">
+            <img src="https://img.icons8.com/?size=512&id=QXTadxb24bUa&format=png" alt="Sortium">
             <p>S/ 50</p>
             <p>sorteado</p>
           </div>
           <div class="card">
+            <img src="https://img.icons8.com/?size=512&id=ll1Ce1YeVoWc&format=png" alt="Sortium">
             <p>+1</p>
-            <p>juego</p>
+            <p>
+              <a href="./public/pages/sorteo.html" target="_blank">juego</a>
+            </p>
           </div>
         </div>
       </article>
     </section>
 
-    <section class="main__about-us">
+    <section id="about-us" class="main__about-us">
       <article>
-        <img src="https://img.icons8.com/?size=512&id=Eidz314LhGsr&format=png" alt="">
+        <img src="https://img.icons8.com/?size=512&id=Ut1mhCuyFDJQ&format=png" alt="Sortium">
       </article>
       <article>
         <p>¿QUIENES SOMOS?</p>
@@ -93,19 +101,32 @@
         <p>Colaboradores:</p>
         <div class="container--profile">
           <div class="card--profile">
-            <img src="https://img.icons8.com/?size=512&id=Eidz314LhGsr&format=png" alt="">
-            <p>Abraham Alanya</p>
+            <img src="https://img.icons8.com/?size=512&id=qBcBy6Kvv674&format=png" alt="Abraham Alanya">
+            <div>
+              <p>Abraham Alanya</p>
+              <p>Desarrollador Web</p>
+            </div>
           </div>
           <div class="card--profile">
-            <img src="https://img.icons8.com/?size=512&id=Eidz314LhGsr&format=png" alt="">
-            <p>Karen Apaza</p>
+            <img src="https://img.icons8.com/?size=512&id=yfMgyPM9Zrzr&format=png" alt="Karen Apaza">
+            <div>
+              <p>Karen Apaza</p>
+              <p>Economista</p>
+            </div>
+          </div>
+          <div class="card--profile">
+            <img src="https://img.icons8.com/?size=512&id=yfMgyPM9Zrzr&format=png" alt="Melina Llacua">
+            <div>
+              <p>Melina Llacua</p>
+              <p>Desarrollador Web</p>
+            </div>
           </div>
         </div>
-        <button class="btn--primary">Saber mas</button>
+        <!-- <button class="btn--primary">Saber mas</button> -->
       </article>
     </section>
 
-    <section class="main__winner">
+    <section id="winner" class="main__winner">
       <article>
         <p>GANADORES</p>
         <p>Compartimos todos los ganadores hasta la actualidad que han cobrado sus respectivos premios</p>
@@ -113,32 +134,34 @@
       <article>
         <div class="card--winner">
           <div>
-            <img src="https://images.pexels.com/photos/323503/pexels-photo-323503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img src="./public/resources/img/winner/winner1.jpg" alt="Sortium">
           </div>
           <p>David De La Cruz</p>
           <div class="detail">
-            <p>#sorteo50</p>
+            <!-- <p>#sorteo50</p> -->
             <p>S/ 50.00</p>
           </div>
-          <div class="date">
+          <!-- <div class="date">
             <p>Fecha:</p>
             <p>2 de Julio, 2023</p>
-          </div>
+          </div> -->
         </div>
       </article>
     </section>
 
-    <section class="main__contact">
+    <section id="contact" class="main__contact">
       <article>
         <div>
           <div class="container--text">
             <p>contacto</p>
             <p>Puedes comunicarte con nosotros si tienes dudas sobre los sorteos o quisieras participar en alguno y no sabes como. Entonces no te preocupes porque puedes enviarnos un mensaje.</p>
           </div>
-          <button class="btn--primary">Conversar</button>
+          <a href="https://www.facebook.com/sortiumoficial" target="_blank">
+            <button class="btn--primary">Conversar</button>
+          </a>
         </div>
         <div>
-          <img src="https://images.pexels.com/photos/323503/pexels-photo-323503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          <img src="https://img.icons8.com/?size=512&id=uZrQP6cYos2I&format=png" alt="Sortium">
         </div>
       </article>
     </section>
@@ -149,7 +172,7 @@
         <p class="footer--logo">sortium</p>
         <p class="footer--slogan">La suerte favorece a los que se arriesgan</p>
       </div>
-      <div>
+      <!-- <div>
         <p class="footer--subtitle">Más pestañas</p>
         <ul>
           <li><a href="/">terminos y condiciones</a></li>
@@ -162,14 +185,14 @@
       </div>
       <div>
         <p>Ruc: 10749023681</p>
-      </div>
+      </div> -->
     </section>
     <section>
       <p>© sortium 2023</p>
       <div>
         <p>Siguenos en: 
           <a href="https://www.facebook.com/sortiumoficial" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="facebook">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="facebook-sortium">
           </a>
         </p>
       </div>

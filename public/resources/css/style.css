@@ -10,8 +10,9 @@
 }
 
 .header .logo h1 {
-  font-size: var(--text-md);
-  font-weight: 500;
+  font-size: var(--text-lg);
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 .menu ul {
@@ -71,15 +72,21 @@
   height: 60vh;
   display: grid;
   place-content: center;
+
+  background-image: url(../img/bg.png);
+  background-position: right;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.main__statistics article p:nth-child(1) {
+.main__statistics article > p:nth-child(1) {
   font-size: var(--text-lg);
   font-weight: 900;
   text-align: center;
 }
 
-.main__statistics article p:nth-child(2) {
+.main__statistics article > p:nth-child(2) {
   font-size: var(--text-md);
   font-weight: 300;
   text-align: center;
@@ -102,6 +109,27 @@
   height: 150px;
   border-radius: 1rem;
   padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__statistics .card img {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+
+.main__statistics article .card > p:nth-child(2) {
+  font-size: var(--text-lg);
+  font-weight: 900;
+  text-align: center;
+}
+
+.main__statistics article .card > p:nth-child(3) {
+  font-size: var(--text-md);
+  font-weight: 300;
+  text-align: center;
 }
 
 /* main__about-us */
@@ -130,21 +158,21 @@
   object-fit: contain;
 }
 
-.main__about-us article:nth-child(2) p:nth-child(1) {
+.main__about-us article:nth-child(2) > p:nth-child(1) {
   font-size: calc(var(--text-lg) + .3em);
   font-weight: 900;
   letter-spacing: 3px;
   margin-bottom: 4rem;
 }
 
-.main__about-us article:nth-child(2) p:nth-child(2) {
+.main__about-us article:nth-child(2) > p:nth-child(2) {
   font-size: var(--text-md);
   font-weight: 300;
   line-height: 3rem;
   text-align: start;
 }
 
-.main__about-us article:nth-child(2) p:nth-child(3) {
+.main__about-us article:nth-child(2) > p:nth-child(3) {
   font-size: var(--text-md);
   font-weight: 500;
   margin-top: 4rem;
@@ -160,24 +188,32 @@
   padding-bottom: 4rem;
 }
 
-.main__about-us .container--profile .card--profile {
-  width: 300px;
+.main__about-us .card--profile {
+  width: 250px;
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.main__about-us .container--profile .card--profile > p {
+.main__about-us .card--profile div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__about-us .card--profile div p:nth-child(1) {
   font-size: var(--text-md);
   font-weight: 400;
+}
+
+.main__about-us .card--profile div p:nth-child(2) {
+  font-weight: 300;
 }
 
 .main__about-us .card--profile img {
   width: 70px;
   height: 70px;
-  background-color: var(--color-sortium);
+  background-color: inherit;
   border-radius: 50%;
-  border: 10px solid var(--color-sortium);
 }
 
 .main__about-us article:nth-child(2) button {
@@ -198,8 +234,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 0 4rem;
-  margin: 4rem 0; */
 }
 
 .main__winner article:nth-child(1) p:nth-child(1) {
@@ -228,6 +262,7 @@
   display: flex;
   flex-direction: column;
   width: 250px;
+  /* height: 300px; */
   background-color: #404b55;
   color: var(--color-white);
   border-radius: 1rem;
