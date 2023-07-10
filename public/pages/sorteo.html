@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sortium</title>
+  <link rel="shortcut icon" href="../resources/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../resources/css/sorteo.css">
+  <script src="../resources/js/sorteo.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>sortium</h1>
+  </header>
+  <main>
+    <section>
+      <article id="file">
+        <input type="file" id="txtFile" class="" accept=".txt" />
+        <button class="btn" onclick="handleFile()">Subir</button>
+      </article>
+      <article id="participants" class="card">
+        <div class="header">
+          <div class="title">
+            <p>0</p>
+            <h5>jugadores</h5>
+          </div>
+        </div>
+      </article>
+    </section>
+    <aside>
+      <div id="trophy" class="card">
+        <h5>Sorteamos</h5>
+        <p>💰</p>
+        <span>S/ 50.00 soles</span>
+      </div>
+      <div id="winner" class="card">
+        <p class="label">El ganador es:</p>
+        <p id="winnerPlayer" class="text" data-text="..."></p>
+      </div>
+      <button id="buttonSelectWinner" class="btn" disabled>Sortear</button>
+    </aside>
+  </main>
+
+  <!-- Confeti -->
+  <script src="../resources/js/confeti.js"></script>
+</body>
+</html>

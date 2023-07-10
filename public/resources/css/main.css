@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --color-sortium: #1982e6;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #a6a6a6;
+  --text-sm: 1.5rem;
+  --text-md: 2rem;
+  --text-lg: 3rem;
+  --text-xl: 4rem;
+  --text-xxl: 6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* theme */
+.light-theme {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.dark-theme {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+/* button */
+button,
+.btn {
+  background-color: #dadada;
+  border: transparent;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.btn--primary {
+  background-color: var(--color-sortium);
+  color: var(--color-white);
+  font-size: var(--text-sm);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-white);
+  color: var(--color-sortium);
+}
+
+
+/* main */
+.main__title--lg,
+.main__title--md,
+.main__title--sm {
+  font-weight: bold;
+}
+
+.main__title--lg {
+  font-size: 6rem;
+}
+
+.main__title--md {
+  font-size: 4rem;
+}
+
+.main__title--sm {
+  font-size: 2rem;
+}
